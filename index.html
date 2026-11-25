@@ -16,5 +16,30 @@
     <li>Beard trim: ₦1,500</li>
     <li>Haircut + beard: ₦4,000</li>
   </ul>
+
+<h2>Book an Appointment</h2>
+<form id="booking-form">
+  <label for="name">Your name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="phone">WhatsApp number</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="service">Service</label>
+  <select id="service" name="service" required>
+    <option value="">Choose a service</option>
+    <option value="haircut">Haircut</option>
+    <option value="beard">Beard trim</option>
+    <option value="both">Haircut + beard</option>
+  </select>
+
+  <label for="date">Date</label>
+  <input type="date" id="date" name="date" required>
+
+  <label for="time">Time</label>
+  <input type="time" id="time" name="time" required>
+
+  <button type="submit">Book now</button>
+</form>
 </body>
 </html>
