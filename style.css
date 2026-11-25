@@ -41,3 +41,16 @@ button {
   border: none;
   border-radius: 6px;
 }
+
+.whatsapp-button {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  padding: 14px;
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}

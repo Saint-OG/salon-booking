@@ -15,5 +15,17 @@ const message = `Hello! I'd like to book a ${service} on ${date} at ${time}. My 
 
 const link = "https://wa.me/" + salonNumber + "?text=" + encodeURIComponent(message);
 
-console.log(link);
+const confirmation = document.getElementById("confirmation");
+confirmation.textContent = "";
+
+const note = document.createElement("p");
+note.textContent = `Almost done, ${name}! Tap the button to confirm on WhatsApp.`;
+
+const button = document.createElement("a");
+button.href = link;
+button.textContent = "Confirm on WhatsApp";
+button.className = "whatsapp-button";
+button.target = "_blank";
+
+confirmation.append(note, button);
 });
